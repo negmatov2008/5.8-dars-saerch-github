@@ -8,7 +8,7 @@ function sarch() {
       users.forEach((user) => {
         if (user.login == inp.value) {
           nameEL.textContent = `The ${user.login}`;
-          
+          inp.value = ""
           nikUrl.textContent = `@${user.login}`;
           url.setAttribute("href", `${user.url}`);
           avatar.setAttribute("src", user.avatar_url);
