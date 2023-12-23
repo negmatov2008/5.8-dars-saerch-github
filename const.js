@@ -1,0 +1,19 @@
+const body = document.querySelector("body");
+const html = document.querySelector("html");
+const cont = document.querySelector(".cont");
+const hero = document.querySelector(".hero");
+const inp = document.querySelector("#inp");
+const about = document.querySelector(".about");
+const img = document.querySelectorAll(".img");
+const dark = document.querySelector(".dark");
+const nik =document.querySelector(".nik")
+const form =document.querySelector("form")
+
+const nameEL = document.querySelector(".name")
+const nikUrl = document.querySelector(".nik-url")
+const url = document.querySelector("#url")
+const avatar = document.querySelector(".picture")
+const repos =document.querySelector(".repos")
+const followers =document.querySelector(".followers")
+const following =document.querySelector(".following")
+const eror =document.querySelector(".eror")

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="./tailwind.js"></script>
+    <title>github-users-search</title>
+  </head>
+  <body class="text-white font-'Space Mono'">
+    <div role="alert" class="alert alert-error hidden eror">
+      <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      <span>Error! Task failed successfully.</span>
+    </div>
+    <div class="w-[730px] mx-auto h-full my-[50px]">
+      <div class="header flex items-center w-full justify-between mb-[36px]">
+        <h1 class="text-[26px] font-bold">devfinder</h1>
+        <div class="flex items-center gap-3">
+          <span class="text-[13px] font-bold mr-[10px] nik">Light</span>
+          <img
+            src="./images/002-sun.svg"
+            class="cursor-pointer dark"
+            onclick="light()"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="hero w-full flex pl-[32px] py-[9.5px] pr-10px bg-[#1E2A47] rounded-[15px] mb-6"
+      >
+        <img class="flex mr-6" src="./images/Combined Shape (4).svg" alt="" />
+        <form>
+          <input
+            type="text"
+            placeholder="Search GitHub username…"
+            id="inp"
+            class="input bg-[#1E2A47]"
+          />
+          <button class="btn btn-info btn-m px-6 ml-[320px] text-white">
+            Search
+          </button>
+        </form>
+      </div>
+      <div
+        class="cont flex w-full bg-[#1E2A47] p-[48px] rounded-[15px] gap-[37px]"
+      >
+        <img
+          class="w-[117px] h-[117px] picture rounded-[50%]"
+          src="./images/picture.png"
+          alt=""
+        />
+        <div class="w-full">
+          <div class="w-full flex justify-between items-center mb-1">
+            <h3 class="text-[26px] font-bold name">The Octocat</h3>
+            <span class="text-[15px] to-inherit">Joined 25 Jan 2011</span>
+          </div>
+          <a id="url" href="">
+            <span class="text-[16px] text-[#0079FF] cursor-pointer nik-url"
+              >@octocat</span
+            ></a
+          >
+          <h4
+            class="mt-6 text-[15px] opacity-75 text[rgba(255, 255, 255, 0.75)] mb-8"
+          >
+            This profile has no bio
+          </h4>
+          <div
+            class="flex justify-between w-full px-8 py-[15px] bg-[#141D2F] rounded-[10px] about"
+          >
+            <div class="flex flex-col">
+              <span>Repos</span> <span class="repos">8</span>
+            </div>
+            <div class="flex flex-col">
+              <span>Followers</span> <span class="followers">3938</span>
+            </div>
+            <div class="flex flex-col">
+              <span>Following</span> <span class="following">9</span>
+            </div>
+          </div>
+          <div
+            class="fot flex flex-col flex-wrap w-full h-[70px] mt-[37px] gap-5"
+          >
+            <div class="flex gap-5">
+              <img class="img" src="./images/003-pin.svg" alt="" /><span
+                >San Francisco</span
+              >
+            </div>
+            <div class="flex gap-5">
+              <img class="img" src="./images/002-url.svg" alt="" /><span
+                >https://github.blog</span
+              >
+            </div>
+            <div class="flex gap-5">
+              <img class="img" src="./images/004-twitter.svg" alt="" /><span
+                >Not Available</span
+              >
+            </div>
+            <div class="flex gap-5">
+              <img
+                class="img"
+                src="./images/001-office-building.svg"
+                alt=""
+              /><span>@github</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./change.js"></script>
+    <script src="./const.js"></script>
+    <script src="./api.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
