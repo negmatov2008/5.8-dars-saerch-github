@@ -3,4 +3,7 @@ async function githubUsers() {
   const users = await response.json();
   console.log(users);
 }
-githubUsers();
+ async function data (){
+  const javob = await githubUsers()
+  console.log(javob)
+ }
